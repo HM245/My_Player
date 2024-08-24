@@ -4,7 +4,7 @@ let audioElement =new Audio('media/songs/You and Me_64(PagalWorld.com.sb).mp3');
 
 
 //Play/pause:
-console.log("Aao saalo");
+console.log("Aao Suno");
 function playsong() {
     if(audioElement.paused || audioElement.currentTime<=0){
         audioElement.play();
