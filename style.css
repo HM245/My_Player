@@ -130,6 +130,7 @@ span.Sname{
     padding: 14px 76px 12px 45px;
     border: none;
     border-bottom: 1px solid #ddd;
+    max-width:15vw;
 }
   
 #myInput:focus {outline: 3px solid #ddd;}
