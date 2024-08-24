@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:bisque;
+}
+#tabs li a{
+    /* margin-top: 5px; */
+    /* padding-inline: 6vw; */
+    /* padding-top: 16px; */
+    float: inline-start;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    /* margin-left: -34px; */
+}
+#tabs li a:hover{
+    color: white;
+    text-decoration:underline;
+    transition: 0.3s;
+    transition-timing-function:ease-out;
+    transform: scale(1.2);
+}
+nav{
+    border: 6px groove silver;
+    border-radius: 20px;
+    background-color: black;
+    height: 12vh;
+    /* display: flexbox; */
+}
+nav ul{
+    padding: 4vh 2vw;
+    /* border: 3px solid black; */
+    flex-wrap: wrap;
+}
+#logo img{
+    border: 8px double white;
+    border-radius: 80px;
+}
+#logo{
+    color: white;
+    align-items: center;
+    padding: 1.5vh 2vw;
+    position:absolute;
+    float:inline-start;
+    max-width: 2vw;
+}
+#logo:hover{
+    transition: 0.3s;
+    transition-timing-function:ease-out;
+    transform: scale(1.2);
+}
+#tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+#tabs li{
+    padding-inline: 5vw;
+    text-shadow: whitesmoke 1px 2px 3px;
+    font-size: x-large;
+}
+.banner{
+    /* border:5px solid blue; */
+    border-radius: 20px;
+    height: 60vh;
+    width: 55vw;
+    margin: 2vh auto;
+    background-image: url(media/Images/anthony-jacobson-NnZYTVuUMxU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    padding-inline: 4vw;
+    padding-block: 3vh;
+}
+.con{
+    /* align-items: center;
+    justify-content: center; */
+    cursor: pointer;
+    opacity:60%;
+    margin-block: 8vh;
+    margin-inline: 2vw;
+    max-inline-size: 8vw;
+}
+.con:hover{
+    transition: 0.3s;
+    transition-timing-function:ease-out;
+    transform: scale(1.2);
+}
+.pp{
+    display: contents;
+}
+progress{
+    width: 60vw;
+}
+span.Sname{
+    margin-inline: 0vw 6vw;
+    opacity: 60%;
+    font-size: xx-large;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 48vw;
+}
+/* i{
+    white-space: nowrap; 
+    overflow: hidden;
+} */
+.base{
+    text-align: center;
+    color: whitesmoke;
+    height: 16.5vh;
+    background-color: black;
+}
+  
+#myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 76px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+  
+#myInput:focus {outline: 3px solid #ddd;}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 20px;
+    background-color:whitesmoke;
+    opacity: 80%;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+    max-height: 40vh;
+}
+  
+.dropdown-content span {
+    color: black;
+    padding: 2px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    overflow: visible;
+    width: 15vw;
+    cursor: pointer;
+}
+  
+.dropdown span:hover {
+    opacity: 80%;
+    background-color: #ddd;}
+  
+.show {display: block;}
+.bi_bi-music-note-list{
+    position: absolute;
+    float: inline-end;
+    cursor: pointer;
+    opacity:60%;
+}
+.bi_bi-music-note-list:hover{
+    transition: 0.3s;
+    transition-timing-function:ease-out;
+    transform: scale(1.2);
+}
