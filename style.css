@@ -47,6 +47,7 @@ nav ul{
     position:absolute;
     float:inline-start;
     max-width: 2vw;
+    max-height: 2vh
 }
 #logo:hover{
     transition: 0.3s;
