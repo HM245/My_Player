@@ -24,7 +24,11 @@ audioElement.addEventListener('timeupdate',()=>{
 
 function s1() {
     audioElement.src="media/songs/You and Me_64(PagalWorld.com.sb).mp3";
-    audioElement.play();   
+    audioElement.play();
+    if(document.getElementById("progressBar").value=100){
+        audioElement.src="media/songs/Magic_64(PagalWorld.com.sb).mp3";
+        audioElement.play();
+    }
 }
 function s2() {
     audioElement.src="media/songs/Magic_64(PagalWorld.com.sb).mp3";
