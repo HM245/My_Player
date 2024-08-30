@@ -39,6 +39,8 @@ nav ul{
 #logo img{
     border: 8px double white;
     border-radius: 80px;
+    max-width: 7vw;
+    max-height: 7vh;
 }
 #logo{
     color: white;
@@ -47,7 +49,6 @@ nav ul{
     position:absolute;
     float:inline-start;
     max-width: 2vw;
-    max-height: 2vh
 }
 #logo:hover{
     transition: 0.3s;
