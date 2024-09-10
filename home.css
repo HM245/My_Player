@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:bisque;
+}
+#tabs li a{
+    /* margin-top: 5px; */
+    /* padding-inline: 6vw; */
+    /* padding-top: 16px; */
+    float: inline-start;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    /* margin-left: -34px; */
+}
+#tabs li a:hover{
+    color: white;
+    text-decoration:underline;
+    transition: 0.3s;
+    transition-timing-function:ease-out;
+    transform: scale(1.2);
+}
+nav{
+    border: 6px groove silver;
+    border-radius: 20px;
+    background-color: black;
+    height: 12vh;
+    /* display: flexbox; */
+}
+nav ul{
+    padding: 4vh 2vw;
+    /* border: 3px solid black; */
+    flex-wrap: wrap;
+}
+#logo img{
+    border: 8px double white;
+    border-radius: 80px;
+}
+#logo{
+    color: white;
+    align-items: center;
+    padding: 1.5vh 2vw;
+    position:absolute;
+    float:inline-start;
+    max-width: 2vw;
+}
+#logo:hover{
+    transition: 0.3s;
+    transition-timing-function:ease-out;
+    transform: scale(1.2);
+}
+#tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+#tabs li{
+    padding-inline: 5vw;
+    text-shadow: whitesmoke 1px 2px 3px;
+    font-size: x-large;
+}
+center h1{
+    font-style: italic;
+    text-shadow: peru 1px 2px 3px;
+    padding-block: 25vh;
+}
+#gif{
+    border-radius: 20px;
+    width: 20vw;
+}
+#gif:hover{
+    transition: 0.3s;
+    transition-timing-function:ease-out;
+    transform: scale(1.2);
+}
+.flex-shrink-0{
+    padding-inline: 10vw;
+}
+#intro{
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: italic;
+}
+.text{
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+.button-92 {
+    --c: #fff;
+    /* text color */
+    background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+      black;
+    /* background color */
+    color: #0000;
+    border: none;
+    transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+    text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+      calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+    outline-offset: .1em;
+    transition: 0.3s;
+}
+  
+.button-92:hover,
+.button-92:focus-visible {
+    --_p: 0%;
+    --_i: 1;
+}
+  
+.button-92:active {
+    text-shadow: none;
+    color: var(--c);
+    box-shadow: inset 0 0 9e9q #0005;
+    transition: 0s;
+}
+  
+.button-92 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+    cursor: pointer;
+    padding: .1em .3em;
+}
+#tab1{
+    text-decoration: none;
+    color: white;
+}
+.button-86 {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+   touch-action: manipulation;
+}
+  
+.button-86::after,
+.button-86::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+}
+  
+.button-86::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
+}
+  
+.button-86::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+  
+.button-86:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+}
+  
+.button-86:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+}
+  
+.button-86:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+}
+#tab2{
+    text-decoration: none;
+    color: white;
+}
+.base{
+    text-align: center;
+    color: whitesmoke;
+    height: 16.5vh;
+    background-color: black;
+}
+.footer{ 
+    text-decoration: none;
+    list-style: none;
+    color: #f0f0f0;
+}

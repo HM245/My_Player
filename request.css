@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:bisque;
+}
+#tabs li a{
+    /* margin-top: 5px; */
+    /* padding-inline: 6vw; */
+    /* padding-top: 16px; */
+    float: inline-start;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    /* margin-left: -34px; */
+}
+#tabs li a:hover{
+    color: white;
+    text-decoration:underline;
+    transition: 0.3s;
+    transition-timing-function:ease-out;
+    transform: scale(1.2);
+}
+nav{
+    border: 6px groove silver;
+    border-radius: 20px;
+    background-color: black;
+    height: 12vh;
+    /* display: flexbox; */
+}
+nav ul{
+    padding: 4vh 2vw;
+    /* border: 3px solid black; */
+    flex-wrap: wrap;
+}
+#logo img{
+    border: 8px double white;
+    border-radius: 80px;
+}
+#logo{
+    color: white;
+    align-items: center;
+    padding: 1.5vh 2vw;
+    position:absolute;
+    float:inline-start;
+    max-width: 2vw;
+}
+#logo:hover{
+    transition: 0.3s;
+    transition-timing-function:ease-out;
+    transform: scale(1.2);
+}
+#tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+#tabs li{
+    padding-inline: 5vw;
+    text-shadow: whitesmoke 1px 2px 3px;
+    font-size: x-large;
+}
+.formbox{
+    border: 10px peru;
+    border-style: double;
+    background-color: aliceblue;
+    margin-inline: 20vw;
+    margin-block: 20vh;
+    border-radius: 20px;
+}
+.mb-3{
+    padding-inline: 8vw;
+    min-width: 20vw;
+    padding-block: 5vh;
+}
+center h1{
+    font-style: italic;
+    text-shadow: peru 1px 2px 3px;
+    /* padding-block: 25vh; */
+}
+.button-53 {
+    background-color: #3DD1E7;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 460px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-block: 6vh;
+  }
+  
+  .button-53:focus {
+    outline: 0;
+  }
+  
+  .button-53:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #000000;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+  }
+  
+  .button-53:hover:after {
+    bottom: 2px;
+    left: 2px;
+  }
+  
+  @media (min-width: 768px) {
+    .button-53 {
+      padding: .75rem 3rem;
+      font-size: 1.25rem;
+    }
+  }
