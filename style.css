@@ -146,12 +146,13 @@ span.Sname{
     display: none;
     position: absolute;
     border-radius: 20px;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     opacity: 80%;
     overflow: auto;
     border: 1px solid #ddd;
     z-index: 1;
     max-height: 40vh;
+    margin-inline-start: -12vw;
 }
   
 .dropdown-content span {
@@ -170,11 +171,12 @@ span.Sname{
     background-color: #ddd;}
   
 .show {display: block;}
-.bi_bi-music-note-list{
+.bi_bi-music-note-list {
     position: absolute;
     float: inline-end;
     cursor: pointer;
-    opacity:60%;
+    opacity: 60%;
+    margin-inline-start: -3vw;
 }
 .bi_bi-music-note-list:hover{
     transition: 0.3s;
