@@ -64,7 +64,8 @@ nav ul{
     text-shadow: whitesmoke 1px 2px 3px;
     font-size: x-large;
 }
-.formbox{
+form{
+    display: grid;
     border: 10px peru;
     border-style: double;
     background-color: aliceblue;
@@ -72,15 +73,10 @@ nav ul{
     margin-block: 20vh;
     border-radius: 20px;
 }
-.mb-3{
-    padding-inline: 8vw;
-    min-width: 20vw;
-    padding-block: 5vh;
-}
 center h1{
     font-style: italic;
     text-shadow: peru 1px 2px 3px;
-    /* padding-block: 25vh; */
+    padding-block-end: 8vh;
 }
 .button-53 {
     background-color: #3DD1E7;
@@ -99,7 +95,7 @@ center h1{
     text-decoration: none #000000 solid;
     text-decoration-thickness: auto;
     width: 100%;
-    max-width: 460px;
+    max-width: 160px;
     position: relative;
     cursor: pointer;
     transform: rotate(-2deg);
@@ -134,3 +130,24 @@ center h1{
       font-size: 1.25rem;
     }
   }
+#name{
+    width: 45vw;
+    border-radius: 4px;
+    margin-inline: 8vw;
+    margin-block-end: 8vh;
+}
+#email{
+    width: 45vw;
+    border-radius: 4px;
+    margin-inline: 8vw;
+    margin-block-end: 8vh;
+}
+#text{
+    width: 45vw;
+    border-radius: 4px;
+    margin-inline: 8vw;
+    margin-block-end: 8vh;
+}
+.Write{
+    margin-inline: 8vw;
+}
