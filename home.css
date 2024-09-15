@@ -92,6 +92,9 @@ center h1{
     font-style: italic;
     text-align: center;
 }
+.d-flex {
+    display: flex;
+}
 .button-92 {
     --c: #fff;
     /* text color */
