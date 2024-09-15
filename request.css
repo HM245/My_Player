@@ -123,8 +123,7 @@ center h1{
     bottom: 2px;
     left: 2px;
   }
-  
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .button-53 {
       padding: .75rem 3rem;
       font-size: 1.25rem;
