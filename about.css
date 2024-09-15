@@ -104,14 +104,18 @@ center h1{
     align-items: center;
     justify-content: center;
 }
-.link a{
+.link a {
     text-decoration: none;
-    color:black;
+    color: black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
-.link li{
+.link li {
     font-size: x-large;
     font-style: italic;
     padding-block: 2vh;
+    padding-inline: 2vw;
 }
 .link li:hover{
     color: white;
