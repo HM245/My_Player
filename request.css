@@ -39,14 +39,13 @@ nav ul{
 #logo img{
     border: 8px double white;
     border-radius: 80px;
+    max-width: 10vw;
 }
 #logo{
     color: white;
-    align-items: center;
     padding: 1.5vh 2vw;
     position:absolute;
     float:inline-start;
-    max-width: 2vw;
 }
 #logo:hover{
     transition: 0.3s;
@@ -65,7 +64,6 @@ nav ul{
     font-size: x-large;
 }
 form{
-    display: grid;
     border: 10px peru;
     border-style: double;
     background-color: aliceblue;
@@ -130,19 +128,19 @@ center h1{
     }
   }
 #name{
-    width: 45vw;
+    width: 40vw;
     border-radius: 4px;
     margin-inline: 8vw;
     margin-block-end: 8vh;
 }
 #email{
-    width: 45vw;
+    width: 40vw;
     border-radius: 4px;
     margin-inline: 8vw;
     margin-block-end: 8vh;
 }
 #text{
-    width: 45vw;
+    width: 40vw;
     border-radius: 4px;
     margin-inline: 8vw;
     margin-block-end: 8vh;
