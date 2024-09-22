@@ -39,7 +39,8 @@ nav ul{
 #logo img{
     border: 8px double white;
     border-radius: 80px;
-    max-width: 10vw;
+    max-width: 7vw;
+    max-height: 7vh;
 }
 #logo{
     color: white;
