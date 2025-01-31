@@ -2,6 +2,16 @@ console.log("Welcome to My Player")
 //initialize the variables
 let audioElement =new Audio('media/songs/You and Me_64(PagalWorld.com.sb).mp3');
 
+const audioArray = [
+    'media/songs/You and Me_64(PagalWorld.com.sb).mp3',
+    'media/songs/Magic_64(PagalWorld.com.sb).mp3',
+    'media/songs/Nasha - Equals Sessions.mp3',
+    'media/songs/Hymn For The Weekend_320(PaglaSongs).mp3',
+    'media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3',
+    'media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3',
+    'media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3'
+]
+let i=0;
 
 //Play/pause:
 console.log("Aao Suno");
@@ -20,6 +30,40 @@ audioElement.addEventListener('timeupdate',()=>{
     seekbar=parseInt((audioElement.currentTime/audioElement.duration)*100);
     document.getElementById("progressBar").value=seekbar;
 })
+
+audioElement.addEventListener('ended',function(){ //when a song finished playing
+    i++; //increase index
+    if (i < audioArray.length) { //If current index is smaller than count of songs
+        audioElement.src = audioArray[i]; //set next song
+        audioElement.play();
+        return; // stop further processing of this function for now
+    }
+    // current index is greater than count of songs
+    i = 0; // therefore we reset the current index to the first available song
+    audioElement.src = audioArray[i]; // and set it to be played
+    audioElement.play();
+  });
+
+function next(){
+    i++;
+    audioElement.src=audioArray[i];
+    audioElement.play();
+    if(i>=audioArray.length){
+        i = 0;
+        audioElement.src = audioArray[i];
+        audioElement.play();
+    }
+}
+function previous(){
+    --i;
+    audioElement.src=audioArray[i];
+    audioElement.play();   
+}
+
+function LetsPlay(){
+    audioElement.src=audioArray[i];
+    audioElement.play();
+}
 
 
 function s1() {
@@ -59,65 +103,65 @@ function s7() {
 }
 
 
-function next(){
-    if (audioElement.src="media/songs/You and Me_64(PagalWorld.com.sb).mp3") {
-        audioElement.src="media/songs/Magic_64(PagalWorld.com.sb).mp3";
-        audioElement.play();
-    }
-    else if (audioElement.src="media/songs/Magic_64(PagalWorld.com.sb).mp3") {
-        audioElement.src="media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3";
-        audioElement.play();
-    } 
-    else if(audioElement.src="media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3") {
-        audioElement.src="media/songs/Nasha - Equals Sessions.mp3";
-        audioElement.play();
-    }
-    else if(audioElement.src="media/songs/Nasha - Equals Sessions.mp3"){
-        audioElement.src="media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3";
-        audioElement.play(); 
-    }
-    else if(audioElement.src="media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3"){
-        audioElement.src="media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3";
-        audioElement.play();
-    }
-    else if(audioElement.src="media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3"){
-        audioElement.src="media/songs/Hymn For The Weekend_320(PaglaSongs).mp3";
-        audioElement.play();
-    }
-    else{
-        s1();
-    }
-}
+// function next(){
+//     if (audioElement.src="media/songs/You and Me_64(PagalWorld.com.sb).mp3") {
+//         audioElement.src="media/songs/Magic_64(PagalWorld.com.sb).mp3";
+//         audioElement.play();
+//     }
+//     else if (audioElement.src="media/songs/Magic_64(PagalWorld.com.sb).mp3") {
+//         audioElement.src="media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3";
+//         audioElement.play();
+//     } 
+//     else if(audioElement.src="media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3") {
+//         audioElement.src="media/songs/Nasha - Equals Sessions.mp3";
+//         audioElement.play();
+//     }
+//     else if(audioElement.src="media/songs/Nasha - Equals Sessions.mp3"){
+//         audioElement.src="media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3";
+//         audioElement.play(); 
+//     }
+//     else if(audioElement.src="media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3"){
+//         audioElement.src="media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3";
+//         audioElement.play();
+//     }
+//     else if(audioElement.src="media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3"){
+//         audioElement.src="media/songs/Hymn For The Weekend_320(PaglaSongs).mp3";
+//         audioElement.play();
+//     }
+//     else{
+//         s1();
+//     }
+// }
 
-function previous(){
-    if (audioElement.src="media/songs/You and Me_64(PagalWorld.com.sb).mp3") {
-        audioElement.src="media/songs/Hymn For The Weekend_320(PaglaSongs).mp3";
-        audioElement.play();
-    }
-    else if (audioElement.src="media/songs/Magic_64(PagalWorld.com.sb).mp3") {
-        audioElement.src="media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3";
-        audioElement.play();
-    } 
-    else if(audioElement.src="media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3") {
-        audioElement.src="media/songs/Nasha - Equals Sessions.mp3";
-        audioElement.play();
-    }
-    else if(audioElement.src="media/songs/Nasha - Equals Sessions.mp3"){
-        audioElement.src="media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3";
-        audioElement.play(); 
-    }
-    else if(audioElement.src="media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3"){
-        audioElement.src="media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3";
-        audioElement.play();
-    }
-    else if(audioElement.src="media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3"){
-        audioElement.src="media/songs/Hymn For The Weekend_320(PaglaSongs).mp3";
-        audioElement.play();
-    }
-    else{
-        s1();
-    }
-}
+// function previous(){
+//     if (audioElement.src="media/songs/You and Me_64(PagalWorld.com.sb).mp3") {
+//         audioElement.src="media/songs/Hymn For The Weekend_320(PaglaSongs).mp3";
+//         audioElement.play();
+//     }
+//     else if (audioElement.src="media/songs/Magic_64(PagalWorld.com.sb).mp3") {
+//         audioElement.src="media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3";
+//         audioElement.play();
+//     } 
+//     else if(audioElement.src="media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3") {
+//         audioElement.src="media/songs/Nasha - Equals Sessions.mp3";
+//         audioElement.play();
+//     }
+//     else if(audioElement.src="media/songs/Nasha - Equals Sessions.mp3"){
+//         audioElement.src="media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3";
+//         audioElement.play(); 
+//     }
+//     else if(audioElement.src="media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3"){
+//         audioElement.src="media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3";
+//         audioElement.play();
+//     }
+//     else if(audioElement.src="media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3"){
+//         audioElement.src="media/songs/Hymn For The Weekend_320(PaglaSongs).mp3";
+//         audioElement.play();
+//     }
+//     else{
+//         s1();
+//     }
+// }
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
