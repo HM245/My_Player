@@ -1,18 +1,20 @@
 console.log("Welcome to My Player")
 //initialize the variables
-let audioElement =new Audio('media/songs/You and Me_64(PagalWorld.com.sb).mp3');
+const audioElement =new Audio('media/songs/You and Me_64(PagalWorld.com.sb).mp3');
 
-// const audioArray = [
-//     'media/songs/You and Me_64(PagalWorld.com.sb).mp3',
-//     'media/songs/Magic_64(PagalWorld.com.sb).mp3',
-//     'media/songs/Nasha - Equals Sessions.mp3',
-//     'media/songs/Hymn For The Weekend_320(PaglaSongs).mp3',
-//     'media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3',
-//     'media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3',
-//     'media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3'
-// ]
-import { audioArray } from "./muli";
+// import { songsl } from "./muli.js";
+// const audioArray = songsl;
+const audioArray = [
+    'media/songs/You and Me_64(PagalWorld.com.sb).mp3',
+    'media/songs/Magic_64(PagalWorld.com.sb).mp3',
+    'media/songs/Nasha - Equals Sessions.mp3',
+    'media/songs/Hymn For The Weekend_320(PaglaSongs).mp3',
+    'media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3',
+    'media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3',
+    'media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3'
+]
 let i=0;
+
 
 //Play/pause:
 console.log("Aao Suno");
@@ -31,6 +33,7 @@ audioElement.addEventListener('timeupdate',()=>{
     seekbar=parseInt((audioElement.currentTime/audioElement.duration)*100);
     document.getElementById("progressBar").value=seekbar;
 })
+
 
 audioElement.addEventListener('ended',function(){ //when a song finished playing
     i++; //increase index

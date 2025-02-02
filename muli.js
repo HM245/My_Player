@@ -1,4 +1,4 @@
-export const audioArray = [
+export const songsl = [
     'media/songs/You and Me_64(PagalWorld.com.sb).mp3',
     'media/songs/Magic_64(PagalWorld.com.sb).mp3',
     'media/songs/Nasha - Equals Sessions.mp3',
