@@ -2,15 +2,16 @@ console.log("Welcome to My Player")
 //initialize the variables
 let audioElement =new Audio('media/songs/You and Me_64(PagalWorld.com.sb).mp3');
 
-const audioArray = [
-    'media/songs/You and Me_64(PagalWorld.com.sb).mp3',
-    'media/songs/Magic_64(PagalWorld.com.sb).mp3',
-    'media/songs/Nasha - Equals Sessions.mp3',
-    'media/songs/Hymn For The Weekend_320(PaglaSongs).mp3',
-    'media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3',
-    'media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3',
-    'media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3'
-]
+// const audioArray = [
+//     'media/songs/You and Me_64(PagalWorld.com.sb).mp3',
+//     'media/songs/Magic_64(PagalWorld.com.sb).mp3',
+//     'media/songs/Nasha - Equals Sessions.mp3',
+//     'media/songs/Hymn For The Weekend_320(PaglaSongs).mp3',
+//     'media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3',
+//     'media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3',
+//     'media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3'
+// ]
+import { audioArray } from "./muli";
 let i=0;
 
 //Play/pause:
@@ -67,101 +68,41 @@ function LetsPlay(){
 
 
 function s1() {
-    audioElement.src="media/songs/You and Me_64(PagalWorld.com.sb).mp3";
+    audioElement.src=audioArray[0];
     audioElement.play();
     document.getElementsByClassName('con')[1].src="media/Images/pause.svg";
 }
 function s2() {
-    audioElement.src="media/songs/Magic_64(PagalWorld.com.sb).mp3";
+    audioElement.src=audioArray[1];
     audioElement.play();
     document.getElementsByClassName('con')[1].src="media/Images/pause.svg";   
 }
 function s3() {
-    audioElement.src="media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3";
+    audioElement.src=audioArray[4];
     audioElement.play();
     document.getElementsByClassName('con')[1].src="media/Images/pause.svg";   
 }
 function s4() {
-    audioElement.src="media/songs/Nasha - Equals Sessions.mp3";
+    audioElement.src=audioArray[2];
     audioElement.play();
     document.getElementsByClassName('con')[1].src="media/Images/pause.svg";   
 }
 function s5() {
-    audioElement.src="media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3";
+    audioElement.src=audioArray[5];
     audioElement.play();
     document.getElementsByClassName('con')[1].src="media/Images/pause.svg";   
 }
 function s6() {
-    audioElement.src="media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3";
+    audioElement.src=audioArray[6];
     audioElement.play();
     document.getElementsByClassName('con')[1].src="media/Images/pause.svg";   
 }
 function s7() {
-    audioElement.src="media/songs/Hymn For The Weekend_320(PaglaSongs).mp3";
+    audioElement.src=audioArray[3];
     audioElement.play();
     document.getElementsByClassName('con')[1].src="media/Images/pause.svg";   
 }
 
-
-// function next(){
-//     if (audioElement.src="media/songs/You and Me_64(PagalWorld.com.sb).mp3") {
-//         audioElement.src="media/songs/Magic_64(PagalWorld.com.sb).mp3";
-//         audioElement.play();
-//     }
-//     else if (audioElement.src="media/songs/Magic_64(PagalWorld.com.sb).mp3") {
-//         audioElement.src="media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3";
-//         audioElement.play();
-//     } 
-//     else if(audioElement.src="media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3") {
-//         audioElement.src="media/songs/Nasha - Equals Sessions.mp3";
-//         audioElement.play();
-//     }
-//     else if(audioElement.src="media/songs/Nasha - Equals Sessions.mp3"){
-//         audioElement.src="media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3";
-//         audioElement.play(); 
-//     }
-//     else if(audioElement.src="media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3"){
-//         audioElement.src="media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3";
-//         audioElement.play();
-//     }
-//     else if(audioElement.src="media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3"){
-//         audioElement.src="media/songs/Hymn For The Weekend_320(PaglaSongs).mp3";
-//         audioElement.play();
-//     }
-//     else{
-//         s1();
-//     }
-// }
-
-// function previous(){
-//     if (audioElement.src="media/songs/You and Me_64(PagalWorld.com.sb).mp3") {
-//         audioElement.src="media/songs/Hymn For The Weekend_320(PaglaSongs).mp3";
-//         audioElement.play();
-//     }
-//     else if (audioElement.src="media/songs/Magic_64(PagalWorld.com.sb).mp3") {
-//         audioElement.src="media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3";
-//         audioElement.play();
-//     } 
-//     else if(audioElement.src="media/songs/y2mate.com - Bombay To Punjab  DEEP JANDU Ft DIVINE Full Video Karan Aujla  Satti Dhillon  Geet MP3.mp3") {
-//         audioElement.src="media/songs/Nasha - Equals Sessions.mp3";
-//         audioElement.play();
-//     }
-//     else if(audioElement.src="media/songs/Nasha - Equals Sessions.mp3"){
-//         audioElement.src="media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3";
-//         audioElement.play(); 
-//     }
-//     else if(audioElement.src="media/songs/y2mate.com - Isyan Tetick  Patlamaya Devam Remix Official Video.mp3"){
-//         audioElement.src="media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3";
-//         audioElement.play();
-//     }
-//     else if(audioElement.src="media/songs/y2mate.com - Rauf  Faik  childhood song Lyrics  Never lie away song lyrics  destvo song.mp3"){
-//         audioElement.src="media/songs/Hymn For The Weekend_320(PaglaSongs).mp3";
-//         audioElement.play();
-//     }
-//     else{
-//         s1();
-//     }
-// }
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
