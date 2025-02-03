@@ -12,6 +12,7 @@ body{
     float: inline-start;
     font-weight: bolder;
     font-style: italic;
+    font-size: 2.4vw;
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -28,7 +29,7 @@ nav{
     border: 6px groove silver;
     border-radius: 20px;
     background-color: black;
-    height: 12vh;
+    max-height: 12vh;
     /* display: flexbox; */
 }
 nav ul{
@@ -39,7 +40,7 @@ nav ul{
 #logo img{
     border: 8px double white;
     border-radius: 80px;
-    max-width: 7vw;
+    max-width: 5vw;
     max-height: 7vh;
 }
 #logo{
@@ -62,7 +63,7 @@ nav ul{
     list-style: none;
 }
 #tabs li{
-    padding-inline: 5vw;
+    padding-inline: 3vw;
     text-shadow: whitesmoke 1px 2px 3px;
     font-size: x-large;
 }
@@ -129,10 +130,13 @@ span.Sname{
     background-position: 14px 12px;
     background-repeat: no-repeat;
     font-size: 16px;
-    padding: 14px 76px 12px 45px;
+    padding: 14px 2px 12px 2px;
     border: none;
+      border-bottom-width: medium;
+      border-bottom-style: none;
+      border-bottom-color: currentcolor;
     border-bottom: 1px solid #ddd;
-    max-width:15vw;
+    min-width: 2vw;
 }
   
 #myInput:focus {outline: 3px solid #ddd;}
@@ -151,8 +155,9 @@ span.Sname{
     overflow: auto;
     border: 1px solid #ddd;
     z-index: 1;
-    max-height: 40vh;
-    margin-inline-start: -12vw;
+    max-height: 54vh;
+    margin-inline-start: -55vw;
+    min-width: 6vw;
 }
   
 .dropdown-content span {

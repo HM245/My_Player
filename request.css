@@ -12,6 +12,7 @@ body{
     float: inline-start;
     font-weight: bolder;
     font-style: italic;
+    font-size: 2.4vw;
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -28,7 +29,7 @@ nav{
     border: 6px groove silver;
     border-radius: 20px;
     background-color: black;
-    height: 12vh;
+    max-height: 12vh;
     /* display: flexbox; */
 }
 nav ul{
@@ -39,7 +40,7 @@ nav ul{
 #logo img{
     border: 8px double white;
     border-radius: 80px;
-    max-width: 7vw;
+    max-width: 5vw;
     max-height: 7vh;
 }
 #logo{
@@ -60,7 +61,7 @@ nav ul{
     list-style: none;
 }
 #tabs li{
-    padding-inline: 5vw;
+    padding-inline: 3vw;
     text-shadow: whitesmoke 1px 2px 3px;
     font-size: x-large;
 }
