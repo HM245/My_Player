@@ -135,8 +135,11 @@ span.Sname{
       border-bottom-width: medium;
       border-bottom-style: none;
       border-bottom-color: currentcolor;
+    border-bottom-width: medium;
+    border-bottom-style: none;
+    border-bottom-color: currentcolor;
     border-bottom: 1px solid #ddd;
-    min-width: 2vw;
+    min-width: 30vw;
 }
   
 #myInput:focus {outline: 3px solid #ddd;}
@@ -156,13 +159,13 @@ span.Sname{
     border: 1px solid #ddd;
     z-index: 1;
     max-height: 54vh;
-    margin-inline-start: -55vw;
-    min-width: 6vw;
+    margin-inline-start: -54vw;
+    min-width: 30vw;
 }
   
 .dropdown-content span {
     color: black;
-    padding: 2px;
+    padding: 10px;
     text-decoration: none;
     display: block;
     white-space: nowrap;
