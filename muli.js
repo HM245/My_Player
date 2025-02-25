@@ -15,7 +15,10 @@ const audioArray = [
     'media/songs/Nam-Dang-Nam-Som(PagalWorld).mp3',
     'media/songs/Machayenge - Emiway Bantai.mp3',
     'media/songs/Daav Laga - Aagey Se Right (Window 8 Ad Song) 190Kbps.mp3',
-    'media/songs/Kosandra(PagalWorld.com.se).mp3'
+    'media/songs/Kosandra(PagalWorld.com.se).mp3',
+    'https://raag.fm/files/mp3/128/Hindi-Singles/27355/Aasa%20Kooda%20-%20(Raag.Fm).mp3',
+    'https://pagalfree.com/musics/128-Softly%20-%20Making%20Memories%20128%20Kbps.mp3',
+    'https://pagalfree.com/musics/128-Akhiyaan%20Gulaab%20-%20Teri%20Baaton%20Mein%20Aisa%20Uljha%20Jiya%20128%20Kbps.mp3'
 ]
 let i=0;
 
@@ -126,6 +129,21 @@ function s10() {
 }
 function s11() {
     audioElement.src=audioArray[10];
+    audioElement.play();
+    document.getElementsByClassName('con')[1].src="media/Images/pause.svg";   
+}
+function s12() {
+    audioElement.src=audioArray[11];
+    audioElement.play();
+    document.getElementsByClassName('con')[1].src="media/Images/pause.svg";   
+}
+function s13() {
+    audioElement.src=audioArray[12];
+    audioElement.play();
+    document.getElementsByClassName('con')[1].src="media/Images/pause.svg";   
+}
+function s14() {
+    audioElement.src=audioArray[13];
     audioElement.play();
     document.getElementsByClassName('con')[1].src="media/Images/pause.svg";   
 }
