@@ -27,29 +27,38 @@ body{
 }
 nav{
     border: 6px groove silver;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: black;
-    max-height: 12vh;
-    /* display: flexbox; */
+    min-height: 7.1vh;
+    max-height: 16.1vh;
 }
 nav ul{
     padding: 4vh 2vw;
     /* border: 3px solid black; */
     flex-wrap: wrap;
 }
-#logo img{
+#dropdown{
+    float: inline-end;
+    display: flex;
+    margin: 5px;
+}
+#dropdown input{
+    font-size: xx-large;
+    color: white;
+    background-color: black;
     border: 8px double white;
+    border-radius: 8px;
+}
+#logo img{
+    border: 6px double white;
     border-radius: 80px;
     max-width: 5vw;
-    max-height: 7vh;
+    max-height: 8vh;
 }
 #logo{
     color: white;
-    align-items: center;
-    padding: 1.5vh 2vw;
-    position:absolute;
-    float:inline-start;
-    max-width: 2vw;
+    float: inline-start;
+    margin: 4px;
 }
 #logo:hover{
     transition: 0.3s;
