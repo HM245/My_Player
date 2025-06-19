@@ -18,3 +18,10 @@ function filterFunction() {
     }
 }
 
+function menueshow(){
+    dropdowncontent.classList.add('showit');
+}
+
+function menuehide(){
+    dropdowncontent.classList.remove('showit');
+}

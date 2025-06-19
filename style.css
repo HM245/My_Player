@@ -37,28 +37,59 @@ nav ul{
     /* border: 3px solid black; */
     flex-wrap: wrap;
 }
-#dropdown{
-    float: inline-end;
-    display: flex;
-    margin: 5px;
-}
 #dropdown input{
-    font-size: xx-large;
-    color: white;
-    background-color: black;
-    border: 8px double white;
-    border-radius: 8px;
+  background-color: black;
+  color: antiquewhite;
+  width: 25px;
+  height: 36px;
+  font-size: large;
+  border-radius: 5px;
+  border: 5px double whitesmoke;
+  cursor: pointer;
+  float: left;
+  margin-block: 1.5vh;
+  margin-inline: 2vw;
 }
+@media only screen and (orientation: landscape) {
+  #dropdown{
+    display: none;
+  }
+}
+#dropdowncontent{
+  display: block;
+  position: absolute;
+  background-color: black;
+  border-radius: 10px;
+  border: 5px groove whitesmoke;
+  transition: all .5s ease;
+  min-width: 2vw;
+  opacity: 0;
+  pointer-events: none;
+}
+#dropdowncontent a{
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+  color: aliceblue;
+  padding: 2vh 5vw;
+}
+#dropdowncontent.showit{
+  pointer-events: auto;
+  opacity: 1;
+  position: fixed;
+} 
 #logo img{
     border: 6px double white;
     border-radius: 80px;
-    max-width: 5vw;
-    max-height: 8vh;
+    max-width: 7vw;
+    max-height: 10vh;
 }
 #logo{
     color: white;
-    float: inline-start;
-    margin: 4px;
+    float: inline-end;
+    margin: 10px;
 }
 #logo:hover{
     transition: 0.3s;
@@ -75,6 +106,11 @@ nav ul{
     padding-inline: 3vw;
     text-shadow: whitesmoke 1px 2px 3px;
     font-size: x-large;
+}
+@media only screen and (orientation: portrait) {
+  #tabs{
+    display: none;
+  }
 }
 .banner{
     /* border:5px solid blue; */

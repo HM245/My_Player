@@ -21,13 +21,16 @@
             <li><a href="about.html">About</a></li>
         </ul>
         <div id="dropdown">
-            <input type="button" value="=">
-            <div class="dropdowncontent">
-
-            </div>
+            <input type="button" value="=" onclick="menueshow()"><br>
         </div>
     </nav>
-    <div class="banner">
+            <div id="dropdowncontent">
+                <a href="home.html">Home</a>
+                <a href="#">Player</a>
+                <a href="request.html">Request</a>
+                <a href="about.html">About</a>
+            </div>
+    <div class="banner" onclick="menuehide()">
         <span class="Sname"><h3><i>MY PLAYER</i></h3></span>
         <div class="dropdown">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi_bi-music-note-list" viewBox="0 0 16 16" onclick="myFunction()">
